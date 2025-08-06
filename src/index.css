@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+
+  /* Step-specific colors */
+  --step-1-50: hsl(120, 50%, 98%);
+  --step-1-100: hsl(120, 60%, 95%);
+  --step-1-200: hsl(120, 50%, 85%);
+  --step-1-300: hsl(120, 40%, 75%);
+  --step-1-500: hsl(142, 71%, 45%);
+  --step-1-600: hsl(142, 76%, 36%);
+  --step-1-700: hsl(142, 72%, 29%);
+  --step-1-800: hsl(142, 64%, 24%);
+  --step-1-900: hsl(142, 72%, 14%);
+
+  --step-2-50: hsl(214, 100%, 97%);
+  --step-2-100: hsl(214, 95%, 93%);
+  --step-2-200: hsl(214, 87%, 85%);
+  --step-2-300: hsl(214, 82%, 75%);
+  --step-2-500: hsl(217, 91%, 60%);
+  --step-2-600: hsl(221, 83%, 53%);
+  --step-2-700: hsl(224, 76%, 48%);
+  --step-2-800: hsl(226, 71%, 40%);
+  --step-2-900: hsl(224, 64%, 33%);
+
+  --step-3-50: hsl(0, 86%, 97%);
+  --step-3-100: hsl(0, 93%, 94%);
+  --step-3-200: hsl(0, 96%, 89%);
+  --step-3-300: hsl(0, 94%, 82%);
+  --step-3-500: hsl(0, 84%, 60%);
+  --step-3-600: hsl(0, 72%, 51%);
+  --step-3-700: hsl(0, 74%, 42%);
+  --step-3-800: hsl(0, 70%, 35%);
+  --step-3-900: hsl(0, 63%, 31%);
+
+  --step-4-50: hsl(270, 100%, 98%);
+  --step-4-100: hsl(269, 100%, 95%);
+  --step-4-200: hsl(269, 100%, 92%);
+  --step-4-300: hsl(269, 97%, 85%);
+  --step-4-500: hsl(271, 81%, 56%);
+  --step-4-600: hsl(271, 91%, 65%);
+  --step-4-700: hsl(272, 87%, 56%);
+  --step-4-800: hsl(273, 85%, 46%);
+  --step-4-900: hsl(274, 80%, 38%);
+
+  --step-5-50: hsl(33, 100%, 96%);
+  --step-5-100: hsl(34, 100%, 92%);
+  --step-5-200: hsl(32, 98%, 83%);
+  --step-5-300: hsl(31, 97%, 72%);
+  --step-5-500: hsl(25, 95%, 53%);
+  --step-5-600: hsl(21, 90%, 48%);
+  --step-5-700: hsl(17, 88%, 40%);
+  --step-5-800: hsl(15, 79%, 34%);
+  --step-5-900: hsl(15, 75%, 28%);
+
+  --step-6-50: hsl(166, 76%, 97%);
+  --step-6-100: hsl(167, 85%, 89%);
+  --step-6-200: hsl(168, 84%, 78%);
+  --step-6-300: hsl(171, 77%, 64%);
+  --step-6-500: hsl(173, 80%, 40%);
+  --step-6-600: hsl(175, 84%, 32%);
+  --step-6-700: hsl(175, 77%, 26%);
+  --step-6-800: hsl(176, 69%, 22%);
+  --step-6-900: hsl(176, 61%, 19%);
+
+  --step-7-50: hsl(210, 20%, 98%);
+  --step-7-100: hsl(220, 14%, 96%);
+  --step-7-200: hsl(220, 13%, 91%);
+  --step-7-300: hsl(216, 12%, 84%);
+  --step-7-500: hsl(220, 9%, 46%);
+  --step-7-600: hsl(215, 14%, 34%);
+  --step-7-700: hsl(217, 19%, 27%);
+  --step-7-800: hsl(215, 28%, 17%);
+  --step-7-900: hsl(221, 39%, 11%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
